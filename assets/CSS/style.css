@@ -1,0 +1,132 @@
+body {
+    /* as chaves se chamam blocos */
+    /* tudo o que se faz no css é denominado propriedade */
+    font-family: 'Muli', sans-serif;
+    /* como importar fontes; aspas simples denota prioridade e coloca a outra fonte sans serife para o caso de em queda de rede e não acesso à fonte que está online ela ser usada */
+    margin: 0;
+    padding: 0;
+    /* padding é uma espécie de margem interna ao texto */
+    /* zerar essas propriedades é importante porque elas vêm com padrões diferentes de zero, o que nem sempre é útil para a estilização do HTML */
+}
+/* color é uma propriedade apenas para texto */
+
+/* header {
+    background-color: rgb(255, 115, 0);
+}
+main {
+    background-color: rgb(255, 115, 0);
+}
+footer {
+    background-color: rgb(255, 115, 0);
+} */
+
+ul li {
+    /* colocando elementos um do lado do outro sem vírgulas quer dizer que um elemento pertence ao outro; quando se coloca elemento1, elemento2 eu consigo selecionar e aplicar estilos a elementos que não têm relação */
+    list-style: none;
+    /* estilo do que caracteriza cada item, se é traço, bola, flecha, ... */
+    /* ul e ol impedem a propriedade display */
+}
+ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    /* seleciona e provoca algum efeito quando passa o mouse sobre o texto do link */
+    color: blue;
+    font-weight: bold;
+}
+.menu {
+    background-color: rgb(224, 223, 223);
+    width: 96%;
+    position: fixed;
+    /* deixa um elemento fixo numa posição */
+    display: flex;
+    /* faz com que os itens dentro do local selecionado virem caixas e esse local um container e esses itens ficam posicionados um do lado do outro */
+    justify-content: space-between;
+    padding: 2%;
+    padding-bottom: 20px;
+    flex-direction: row;
+    
+}
+.menu li {
+    display: inline;
+    padding-left: 100px;
+}
+header > .menu > ul > li:nth-child(2) a {
+    /* no caso, como eu quis alterar a cor de um link e eu já  */
+    font-weight: bold;
+    color: red;
+}
+.LOGO{
+    width: 4%;
+    height: 4%;
+}
+.estilo-imagem {
+    border: solid blue;
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+    
+}
+.banner{
+    padding-top: 160px;
+    padding-bottom: 160px;
+    text-align: center;
+
+    background-image: url(../images/background-banner.jpg);
+    /* url vai no diretorio onde se encontra a image; o ponto "." volta uma pasta */
+    /* background-repeat: no-repeat impede que a imagem se repita várias vezes; background-size: cover faz com que a imagem ocupe todo o espaço da class */
+    background-size: cover;
+    /* em background-size: eu consigo também colocar o tamanho que eu quiser  */
+    
+}
+.banner > h1 {
+    /* seleção por parent o elemento antes de > é pai do elemento que vem depois, e assim eu seleciono um só elemento dizendo a origem dele*/
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+}
+#receita-bolinho {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    /* margin-bottom se refere à margem de baixo */
+}
+.container-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* flex-direction organiza em linha (lado a lado) ou em coluna (um embaixo do outro); column reverse ou row reverse iverte a ordem  */
+    
+    flex-wrap: row wrap;
+    /* wrap força o conteúdo a se manter nas dimensões quebrando o conteúdo; row wrap coloca tanto em linha quanto condiciona o texto ao tamanho direcionado aos itens sem que ultrapasse as dimensões da página; nowrap mantém tudo na mesma linha acrescentando uma barra de rolagem horizontal  */
+}
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-2de1 {
+    padding: 3%;
+}
+
+
+footer {
+    background-color:  rgb(224, 223, 223);
+}
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: initial;
+}
+.info, .links, .redes {
+    text-align: center;
+}
+footer > div > div > ol > li:first-child {
+    /*em listas :nth-child(n) em que n é a posição do elemento seleciona apenas o enésimo elemnto*/
+    font-weight: bold;
+    margin-bottom: 1%;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- denomina que estamos usando HTML5 -->
+<html lang="pt-br">
+<!-- define o idioma -->
+<!-- < > é denominado tag -->
+
+<head>
+    <!-- head é o cérebro da pagina (não se vê) e nele se chamam todos os itens externos que eu vou usar, bem como editar todos os metadados (dados tipo responsividade, autor, mecanismos de busca) -->
+    <meta charset="UTF-8">
+    <!-- charset é o padrão para a leitura do texto, do teclado, ... -->
+    <meta name="author" content="Julio Neto">
+    <!-- denomina quem  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- serve para ajudar a enquadrar na responsividade, isto é,  -->
+    <meta name="keywords" content="Comida de boteco, boteco, fome, comida em sp, comida em sao paulo, comida sp">
+    <!-- serve para rankear o site no sistema de busca -->
+    <meta name="description" content="Serviço de Buffet a Domicilio com Cardápio de Boteco. Confira! Orçamento sem Compromisso. Experiência e Qualidade. Qualidade e Segurança.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <!-- rel referencia o documento -->
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- importar fonte -->
+    <title>Comida de Boteco</title>
+</head>
+
+<body>
+<!-- corpo da pagina -->
+    <header>
+        <nav class="menu">
+            <!-- nav é uma div de navegação; tudo pelo qual eu consigo navegar na pagina -->
+            <img class="LOGO" src="assets/images/restaurante.png" alt="LOGO">
+            <!-- a linka alguma coisa no HTML -->
+            <ul>
+                <!-- ul - define lista não ordenada ordem; li - cria itens em uma lista -->
+                <li><a href="#Coxinha">Coxinhas</a></li>
+                <li><a href="#Bolinho de Bacalhau">Bolinho de Bacalhau</a></li>
+                <li><a href="#">Pastéis</a></li>
+                <li><a href="#">Extras</a></li>
+                <li><a href="#">Bebidas</a></li>
+                <li><a href="#">Sobremesas</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- main é uma espécie de div que nomeia o conteúdo principal da página -->
+        <div class="banner">
+            <h1>As Famosas Comidas de Boteco</h1>
+                <!-- hn (n é o número) além de servir como título e define relevância dentro da página, também guia o mecanismo de busca até a página, funciona parecido com os keywords-->
+            <!-- tag <br> se tornou obsoleta e não é bom usar -->
+            <p>Essas são as delícias do nosso verão</p> 
+        </div>
+        
+        <section id="receita-bolinho">
+            <div class="container-1">
+                <div class="container-1de1">
+                    <img class="estilo-imagem" src="assets/images/bacalhau.jpeg" alt="bolinho de bacalhau">
+                </div>
+                <div class="container-2de1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eveniet architecto quia magnam numquam perspiciatis natus accusamus nemo autem quos consectetur, sit nesciunt cumque odio corrupti dolorem inventore cum at.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Bolinho de Bacalhau"></section>
+            <!-- section só é nomeada por id; div só é nomeada por class; id é linkada com #nomedaid; class é linkada com .nomedadiv; podem haver várias class iguais em diferentes partes do texto, enquanto id só pode existir um -->
+            <div>
+
+                </div>
+                <div class="container-2">
+                    <div class="container-1de2">
+                            <h2>Bolinho de Bacalhau é uma MARAVILHA!</h2>
+                    </div>
+                    <div class="container-2de2">
+                            <p>EXTRA! <a href="https://www.google.com.br/search?q=bolinho+de+bacalhau&oq=bolinho+de+bacalhau&aqs=chrome..69i57j0l5.3234j0j9&sourceid=chrome&ie=UTF-8" target="_blank">Veja</a></p>
+                    </div>
+                        <div class="container-3de2">
+                                <img class="estilo-imagem" src="assets/images/bacalhau.jpeg" alt="Bolinho de Bacalhau">
+                        </div>
+                        <div class="container-4de2">
+                            <aside>
+                                    <!-- aside é como se fosse uma div e adiciona o texto em uma barra horizontal -->
+                                    Na vida descobrimos coisas
+                                </aside>
+                        </div>
+                        
+                </div>
+            </div>
+        <section id="Coxinha">
+            <article>
+            <!-- é uma div para texto -->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, obcaecati. Nemo explicabo eum sunt aliquid error nostrum, repellendus ea vel laborum ducimus, est, recusandae reprehenderit enim excepturi perspiciatis? Nulla, ad!</p>
+                <span>bambam ipsum</span>
+                <!-- tag span introduz um texto fora da formatação de parágrafo -->
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="info">
+                <ol>
+                    <li>+INFO</li>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                    <li>Trabale Conosco</li>
+                </ol>
+            </div>
+    
+            <div class="links">
+                <ol>
+                    <li>+Links</li>
+                    <li><a href="#">Coxinhas</a> </li>
+                    <li><a href="#">Bolinho de Bacalhau</a></li>
+                    <li><a href="#">Pastéis</a></li>
+                    <li><a href="#">Extras</a></li>
+                </ol>
+            </div>
+            
+            <div class="redes">
+                <ol>
+                    <li>+Redes Sociais</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Whatsapp</li>
+                    <li>Telegram</li>
+                </ol>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
